@@ -2,14 +2,17 @@ import { useEffect, useState } from "react";
 import Product from "./Product/Product";
 import "./Products.css";
 
-const Products = ({handleAddToCart}) => {
+const Products = ({handleAddToCart, handleFetchCartProducts}) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     fetch("products.json")
       .then((response) => response.json())
-      .then((data) => setProducts(data));
-  });
+      .then((data) => {
+        setProducts(data)
+        handleFetchCartProducts(data)
+      });
+  }, []);
   return (
     <>
       <section className="products-container">
