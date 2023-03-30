@@ -45,8 +45,9 @@ const Shop = () => {
         <Products
           handleAddToCart={handleAddToCart}
           handleFetchCartProducts={handleFetchCartProducts}
+          cartProducts={cartProducts}
         />
-        <Cart cartProducts={cartProducts} handleClearCart={handleClearCart} />
+        <Cart cartProducts={cartProducts} handleClearCart={handleClearCart} go/>
       </div>
     </>
   );

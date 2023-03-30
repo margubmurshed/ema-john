@@ -19,6 +19,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 0 10px;
+    margin-bottom: 30px;
 }
 
 .cart-buttons{
@@ -41,4 +42,24 @@
 
 .review-order-btn{
     background-color: orange;
+}
+
+.cart-products{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-product{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+.cart-product-img{
+    width: 100%;
+}
+
+.cart-product-name{
+    font-size: 14px;
 }

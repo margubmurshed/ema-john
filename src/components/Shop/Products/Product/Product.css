@@ -36,7 +36,14 @@
     transition: 0.3s;
     border-radius: 10px;
 }
-
 .add-to-cart-btn:hover{
     background-color: #f9cb84;
+}
+
+.add-more-to-cart{
+    background-color: #b3d3ff !important;
+    color: #10618d !important;
+}
+.add-more-to-cart:hover{
+    background-color: #84b3f9 !important;
 }
